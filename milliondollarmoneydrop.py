@@ -141,7 +141,8 @@ class Game:
             answers have to be integers greater than 0 and you can only bet up to the amount of money you have left
             if inputs are not valid they get set to 0, if you bet more money than you have it shows an errorbox and
             you have to answer the question again
-            :return:
+            :return: if inputs are correct it returns the amount of money bet on the right answer
+            otherwise it calls the singleplayer function with the same question again
             '''
             answer1 = answer1_entry.get()
             try:
